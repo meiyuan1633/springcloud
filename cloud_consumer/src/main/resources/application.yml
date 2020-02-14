@@ -1,0 +1,14 @@
+server:
+  port: 8902
+spring:
+  application:
+    name: tina-consumer
+  main:
+    allow-bean-definition-overriding: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+feign:
+  hystrix:
+    enabled: true
